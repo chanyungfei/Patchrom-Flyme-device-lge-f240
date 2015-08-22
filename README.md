@@ -1,0 +1,1 @@
+LG-F240L的FlymeOS，基于F240L30C_00.KDZ插桩适配。
