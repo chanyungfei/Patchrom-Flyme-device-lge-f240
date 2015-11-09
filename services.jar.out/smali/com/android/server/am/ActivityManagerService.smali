@@ -3,8 +3,8 @@
 .source "ActivityManagerService.java"
 
 # interfaces
-.implements Lcom/android/server/Watchdog$Monitor;
 .implements Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;
+.implements Lcom/android/server/Watchdog$Monitor;
 
 
 # annotations
