@@ -40,14 +40,14 @@ vendor_modify_images := boot
 # The default value is app or pri-app which not need to configure.
 # You can configure the directory name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-#vendor_remove_dirs := vendor/operator/app
+vendor_remove_dirs := vendor/overlay apps
 
 ##############################################################################
 # The value decides the file which you want to remove in the vendor directory for the ota package.
 # The default value is nothing.
 # You can configure the file name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-#vendor_remove_files := bin/zchgd
+vendor_remove_files := kroot_20151109163815.txt
 
 ##############################################################################
 # The value decides the vendor apk which you want to save in the vendor directory for the ota package.
@@ -57,7 +57,7 @@ vendor_modify_images := boot
 vendor_saved_apps := LGBluetooth4 KeyChain TagGoogle HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  LGExternalStorageProvider InputDevices \
                      ProxyHandler Shell DefaultContainerService LGStk TimeService \
-                     atfwd com.qualcomm.location LGSystemServer LGQRemote QuicksetSDK
+                     atfwd com.qualcomm.location LGSystemServer LGQRemote QuicksetSDK LgNfc
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
