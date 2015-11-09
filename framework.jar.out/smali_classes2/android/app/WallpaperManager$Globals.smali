@@ -810,10 +810,8 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 441
     const/4 v2, 0x0
 
-    .line 442
     .local v2, "is":Ljava/io/InputStream;
     :try_start_0
     const-string v4, "ro.lge.device_color"
@@ -1285,7 +1283,7 @@
 
     move-result-object v6
 
-    const v7, 0x1080294
+    const v7, #android:drawable@default_wallpaper#t
 
     invoke-static {v6, v7}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 

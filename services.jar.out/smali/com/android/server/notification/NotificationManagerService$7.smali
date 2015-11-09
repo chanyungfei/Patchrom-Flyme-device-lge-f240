@@ -425,14 +425,12 @@
 
     invoke-virtual {v1, v0, v12}, Lcom/android/server/notification/NotificationManagerService$NotificationListeners;->notifyPostedLocked(Landroid/service/notification/StatusBarNotification;Landroid/service/notification/StatusBarNotification;)V
 
-    .line 1873
     .end local v12    # "oldSbn":Landroid/service/notification/StatusBarNotification;
     :goto_2
     iget-object v1, p0, Lcom/android/server/notification/NotificationManagerService$7;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-virtual {v1, v13}, Lcom/android/server/notification/NotificationManagerService;->buzzBeepBlinkLocked(Lcom/android/server/notification/NotificationRecord;)V
 
-    .line 1874
     monitor-exit v14
 
     goto/16 :goto_0
