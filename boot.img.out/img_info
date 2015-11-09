@@ -1,0 +1,12 @@
+kernel=kernel
+ramdisk=RAMDISK
+page_size=2048
+kernel_size=7068272
+ramdisk_size=4080252
+base_addr=0x80200000
+kernel_offset=0x00008000
+ramdisk_offset=0x02000000
+tags_offset=0x00000100
+cmd_line='console=ttyHSL0,115200,n8 user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.hardware=geefhd vmalloc=600M androidboot.bootdevice=msm_sdcc.1'
+board=""
+format=gzip

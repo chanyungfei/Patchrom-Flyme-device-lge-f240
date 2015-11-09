@@ -1,0 +1,26 @@
+#!PA_PROJECT!#
+Description                    "Blaze-generated patts1_hmm_phone voice for ko_kr (speaker ism, sample rate 22050, size all)";
+ServerVoiceName                "ism-phone-hmm";
+speaker                        "ism";
+sample_rate                    "22050";
+gender                         "female";
+subset                         "all";
+aligner                        "flatstart";
+language                       "ko";
+region                         "kr";
+quality                        "normal";
+pipeline                       "flatstart_patts1_hmm_phone_ko_kr_ism_22050_all.pipeline";
+CompileParamsFile              "compile_hmm_phoneme.cfg";
+EngineParamsFile               "engine_hmm_22050_ap-embedded_lsp.cfg";
+G2pFstFile                     "g2p_m3_syls0_stress0_ko-KR.fst";
+ActiveLexicon                  "compressed_lexicon_ko_kr.blex";
+RunVoiceFile                   "patts1_hmm_voice_ko_kr_ism_all_22050_phoneme_lsp_swop_ap_msd_bin_8bit.voice";
+TextNormParamsFile             "textnorm_kestrel.cfg";
+DataParamsFile                 "phonology.cfg";
+phonology                      "phonology.pb";
+textnorm_params                "textnorm_params.pb";
+tokenize_and_classify          "tokenize_and_classify_android.far";
+transliterate                  "transliterate_android.far";
+verbalize                      "verbalize_android.far";
+modules                        "tokenize_and_classify_kestrel verbalize_kestrel transliterate pronounce hmm";
+

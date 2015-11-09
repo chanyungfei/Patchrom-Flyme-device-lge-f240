@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<profiles>
+
+    <FeatureSet>
+
+    <!-- Message Start-->
+        <item name="OperatorMessage">true</item>
+        <item name="spam">true</item>
+        <item name="LGUspam">true</item>
+        <item name="KRWapPushWithSpam">true</item>
+        <item name="limitless_unauthorized_SMS_usage">true</item>
+        <item name="KREncodingScheme">true</item>
+        <item name="KSC5601Encoding">true</item>
+        <item name="KSC5601Decoding">true</item>
+        <item name="addSCAddress">true</item>
+        <item name="countCharIndexInsteadOfSeptets">true</item>
+        <item name="countLengthBytes">true</item>
+        <item name="KROperator">true</item>
+        <item name="KRVMSType">true</item>
+        <item name="ConcatMTCheckTimestamp">true</item>
+        <item name="kr_sms_kpas">true</item>
+        <item name="releaseOperatorMccMnc">45006</item>
+        <!-- LGU Message Start-->
+        <item name="lgu_cbs">true</item>
+        <item name="dtmf_error_handle">true</item>
+        <item name="timestamp_correction">true</item>
+        <item name="lgu_dispatch">true</item>
+        <item name="kr_address_spec">true</item>
+        <item name="lgu_address_spec">true</item>
+        <item name="lgu_userdata_encoding">true</item>
+        <item name="save_usim_3gpp_in_cdma">true</item>
+        <item name="lgu_gsm_submit_encoding_type">true</item>
+        <item name="sms_full_exception_case">true</item>
+        <item name="use_reply_address_in_usim_restore">false</item>
+        <item name="replyAddress">true</item>
+        <item name="LGU_OEMMMS">false</item>
+        <item name="lgu_disable_smsoverims_in_gsm">true</item>
+        <item name="SendIntentFailure">true</item>
+        <!-- constants -->
+        <item name="max_user_data_bytes_ex">80</item>
+        <item name="max_user_data_septets_ex">80</item>
+        <item name="limit_user_data_septets">91</item>
+        <item name="doNotUse_AP_retry">true</item>
+        <item name="lgu_gsm_operator_message">true</item>
+        <item name="vmn_count_hex_conversion">true</item>
+        <!-- LGU Message End-->
+        <item name="seperate_processing_sms_uicc">true</item>
+        <item name="sms_separate_usimbox">true</item>
+        <item name="cdma_sms_callback">true</item>
+        <item name="sms_over_ims_in_lte_single_mode">false</item>
+        <item name="create_pdu_by_sms_format">true</item>
+        <item name="sms_permission_tracking">true</item>
+        <item name="support_emoji_in_concat_message">true</item>
+        <item name="KR_notSaveAfterSend">true</item>
+        <item name="spts_msg">true</item>
+        <item name="kr_operator_web_send">true</item>
+    <!-- Message End-->
+
+    <!-- Telephony Start-->
+        <item name="LGU_roaming_ecclist">112,119,122,911</item>
+        <item name="LGU_ecclist">119,111,112,113,122,125,117,118</item>
+        <item name="support_send_burst_dtmf">true</item>
+        <item name="NotDisableDataCallInEmergencyCall">true</item>
+        <item name="NotSupportOtaSpNumber">true</item>
+        <item name="RingBackTone">true</item>
+        <item name="Korea_RAD">true</item>
+        <item name="Korea_CNAP">false</item>
+        <item name="Korea_CDNIP">true</item>
+        <item name="Korea_USSD">false</item>
+        <item name="KR_Modem_Item">true</item>
+        <item name="KR_RAD_TEST">true</item>
+        <item name="LGU_CDMA_ERI_TEXT">true</item>
+        <item name="Is_QCRIL">true</item>
+        <item name="KR_REJECT_CAUSE">true</item>
+        <item name="lgu_global_roaming">true</item>
+        <item name="MANAGED_TIME_SETTING">true</item>
+        <item name="MAUNAL_TIMEZONE_SETTING_POPUP">true</item>
+        <item name="NITZ_WAITING_TIMEOUT">10000</item><!--miliseconds-->
+        <item name="MANAGED_TIME_LOCAL_AREAS">450</item>
+        <item name="CHANGE_CDMA_SUBSCRIPTION_TO_RUIM">true</item>
+        <item name="SKT_FIRST_ROAMING_DIALOG">false</item>
+        <item name="OEM_RAD_DIALER_POPUP">true</item>
+        <item name="USIM_PERSONAL_LOCK">false</item>
+        <item name="MANUAL_SELECTION_WITH_RAT">true</item>
+        <item name="SHOW_NETWORK_NAME_WHEN_MANUAL_NETWORK_SETTING_FAIL">true</item>
+        <item name="SAVE_NETWORK_OPERATOR_SHORT_NAME">true</item>
+        <item name="LGE_NumberFormat">true</item>  <!-- Number format : GB form -->
+        <item name="2_CHIP_DELAY_FOR_NT_MODE_CHANGE">0</item>
+        <item name="LGE_PHONE_NUMBER_QUERY">true</item>
+<!-- LGE_CHANGE_S, [Net_Patch_1201][CALL_FRW][LGU], 2013-02-15, LGU+ KNIGHT v2.95 -->
+        <item name="LGU_KNIGHT_V2_9">true</item>
+<!-- LGE_CHANGE_E, [Net_Patch_1201][CALL_FRW][LGU], 2013-02-15, LGU+ KNIGHT v2.95 -->
+        <item name="GROUP_CUSTOM_RINGTONE">true</item>
+        <item name="support_cdg2_test">true</item>
+<!-- LGE_CHANGE_S, [Tel_Patch_1208][CALL_FRW][LGU], 2013-03-18, LGU+ LTE single device -->
+        <item name="lgu_lte_single_device">false</item>
+<!-- LGE_CHANGE_E, [Tel_Patch_1208][CALL_FRW][LGU], 2013-03-18, LGU+ LTE single device -->
+<!-- LGE_CHANGE_S, [Net_Patch_1207][CALL_FRW][LGU], 2013-04-02, LGU+ network mode change (GWL->GW) arriving at roaming area -->
+        <item name="lgu_lte_roaming">false</item>
+<!-- LGE_CHANGE_E, [Net_Patch_1207][CALL_FRW][LGU], 2013-04-02, LGU+ network mode change (GWL->GW) arriving at roaming area -->
+        <item name="SUPPORT_INFO_FOR_IMS">true</item>
+        <item name="support_usim_compatibility">false</item>
+        <item name="guide_automatic_time_setting">true</item>
+<!-- LGE_CHANGE_S, [Call_Patch_0066][CALL_FRW][KDDI/LGU/VZW], 2014-08-12, KDDIOEM_EXTEND/LGU/VZW To support enhancedvoicecall { -->
+        <item name="SUPPORT_ENHANCED_VOICECALL">true</item>
+<!-- LGE_CHANGE_E, [Call_Patch_0066][CALL_FRW][KDDI/LGU/VZW], 2014-08-12, KDDIOEM_EXTEND/LGU/VZW To support enhancedvoicecall } -->
+        <item name="SUPPORT_LOG_RF_INFO">false</item>
+        <item name="noti_for_all_user">true</item>
+        <item name="support_svlte">true</item>
+    <!-- Telephony END-->
+    </FeatureSet>
+
+</profiles>

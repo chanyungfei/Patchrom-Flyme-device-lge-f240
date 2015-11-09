@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RSSI>
+    <!-- RSSI Level Start-->
+    <item name="levelNum">5</item>
+    <!-- RSSI Level END-->
+
+	<!-- LTE Start-->
+	<!-- mLteRsrp, mLteRssnr, mLteSignalStrength, mLteRsrq -->
+	<item name="mLteRsrp">5,-110,-114,-118,-122,-125</item>
+	<item name="mLteRssnr"></item>
+	<item name="mLteSignalStrength"></item>
+	<item name="mLteRsrq"></item>
+	<!-- LTE END-->
+
+	<!-- CDMA & EVDO Start-->
+	<!-- cdmaDbm, cdmaEcio, evdoDbm, evdoSnr -->
+	<item name="cdmaDbm">5,-95,-99,-102,-105,-109</item>
+	<item name="cdmaEcio"></item>
+	<item name="evdoDbm"></item>
+	<item name="evdoSnr"></item>
+	<!-- CDMA & EVDO END-->
+
+    <!-- GSM Start-->
+    <!-- asu_gsm, asu_umts, aus_etc -->
+	<item name="asu_gsm">5,13,11,9,7,4</item>
+	<item name="asu_umts">5,14,11,8,6,3</item>
+	<item name="asu_etc">5,12,10,8,6,4</item>
+    <!-- GSM END-->
+</RSSI>

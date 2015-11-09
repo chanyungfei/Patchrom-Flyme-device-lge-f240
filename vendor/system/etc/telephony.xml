@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profiles>
+    <!-- Operator -->
+    <profile>
+        <siminfo operator="LGU" country="KR" mcc="450" mnc="06" gid="" spn="" imsi="" default="true"/>
+        <item name="VMS">*88</item>
+        <item name="RVMS"></item>
+        <item name="ECC_list"></item>
+        <item name="ShortCodeCall">0,08</item>
+    </profile>
+
+    <profile>
+        <siminfo operator="TMO" country="GB" mcc="234" mnc="30" />
+        <siminfo operator="Virgin" country="GB" mcc="234" mnc="31" />
+        <siminfo operator="Virgin" country="GB" mcc="234" mnc="32" />
+        <siminfo operator="ORG" country="GB" mcc="234" mnc="33" />
+        <siminfo operator="ORG" country="GB" mcc="234" mnc="34" />
+        <siminfo operator="OPEN" country="GB" mcc="234" mnc="86" />
+        <item name="HOME_NETWORK">23430,23431,23432,23433,23434,23486</item>
+    </profile>
+    <profile>
+        <siminfo operator="Yoigo" country="ES" mcc="214" mnc="04" />
+        <item name="HOME_NETWORK">21404,21407</item>
+    </profile>
+    <profile>
+        <siminfo operator="Hot_Mobile" country="IL" mcc="425" mnc="07" /> <!--add 42501-->
+        <item name="HOME_NETWORK">42501,42503</item>
+    </profile>
+    <profile>
+        <siminfo operator="SFR" country="FR" mcc="208" mnc="10" />
+        <siminfo operator="SFR" country="FR" mcc="208" mnc="11" />
+        <item name="HOME_NETWORK">20810,20811</item>
+    </profile>
+    <profile>
+        <siminfo operator="A1" country="AT" mcc="232" mnc="01" />
+        <siminfo operator="Bob" country="AT" mcc="232" mnc="11" />
+        <item name="HOME_NETWORK">23201,23210,23211</item>
+    </profile>
+    <profile>
+        <siminfo operator="NRJ" country="FR" mcc="208" mnc="26" />
+        <item name="HOME_NETWORK">20801,20810</item>
+    </profile>
+    <profile>
+        <siminfo operator="Free Mobile" country="FR" mcc="208" mnc="15" />
+        <item name="HOME_NETWORK">20801,20802,20810</item>
+    </profile>
+    <profile>
+        <siminfo operator="Tele2" country="NL" mcc="204" mnc="02" />
+        <item name="HOME_NETWORK">20416,20420</item>
+    </profile>
+    <profile>
+        <siminfo operator="Telenor" country="SE" mcc="240" mnc="08" />
+        <item name="HOME_NETWORK">24004,24008,24024</item>
+    </profile>
+    <profile>
+        <siminfo operator="H3G" country="SE" mcc="240" mnc="02" />
+        <item name="HOME_NETWORK">24002,24004</item>
+    </profile>
+    <profile>
+        <siminfo operator="Tele2" country="SE" mcc="240" mnc="07" />
+        <item name="HOME_NETWORK">24005,24007,24024</item>
+    </profile>
+    <profile>
+        <siminfo operator="Telia" country="SE" mcc="240" mnc="01" />
+        <item name="HOME_NETWORK">24001,24005</item>
+    </profile>
+
+    <!--France-->
+    <profile>
+        <siminfo operator="NRJ" country="FR" mcc="208" mnc="26" /> <!--new-->
+        <item name="HOME_NETWORK">20810,20801</item>
+    </profile>
+
+    <!--France,TMO_EU, ORG ,OPEN-->
+    <profile>
+        <siminfo operator="SFR" country="FR" mcc="208" mnc="10" />
+        <siminfo operator="SFR" country="FR" mcc="208" mnc="11" />
+        <item name="HOME_NETWORK">20810,20811</item>
+    </profile>
+    <profile>
+        <siminfo operator="Free Mobile" country="FR" mcc="208" mnc="15" /> <!--new-->
+        <item name="HOME_NETWORK">20801,20802,20810</item>
+    </profile>
+
+    <!--SPAIN-->
+    <profile>
+        <!--<siminfo operator="Euskaltel" country="ES" mcc="214" mnc="06" /> deleted-->
+        <siminfo operator="Euskaltel" country="ES" mcc="214" mnc="08" /> <!--add 21406-->
+        <siminfo operator="TeleCable" country="ES" mcc="214" mnc="16" /> <!--add 21406-->
+        <item name="HOME_NETWORK">21401,21406</item>
+    </profile>
+
+    <!--SPAIN,TMO_EU, ORG ,OPEN-->
+    <profile>
+        <siminfo operator="Jazztel" country="ES" mcc="214" mnc="21" />
+        <item name="HOME_NETWORK">21403</item>
+    </profile>
+    <profile>
+        <siminfo operator="Simyo" country="ES" mcc="214" mnc="19" />
+        <item name="HOME_NETWORK">21403</item>
+    </profile>
+    <profile>
+        <siminfo operator="movistar" country="ES" mcc="214" mnc="02" /> <!--new-->
+        <siminfo operator="TME" country="ES" mcc="214" mnc="05" />
+        <item name="HOME_NETWORK">21402,21405,21407</item>
+    </profile>
+
+    <profile>
+        <siminfo operator="movistar" country="ES" mcc="214" mnc="07" />
+        <item name="HOME_NETWORK">21402,21404,21405,21407</item>
+    </profile>
+
+    <profile>
+        <siminfo operator="ONO" country="ES" mcc="214" mnc="18" />
+        <item name="HOME_NETWORK">21407</item>
+    </profile>
+
+    <!--Denmark-->
+    <profile>
+        <siminfo operator="Telenor" country="DK" mcc="238" mnc="02" />
+        <siminfo operator="Telia" country="DK" mcc="238" mnc="20" />
+        <item name="HOME_NETWORK">23866</item>
+    </profile>
+
+    <!--Germeny-->
+    <profile>
+        <siminfo operator="O2" country="DE" mcc="262" mnc="07" />
+        <siminfo operator="O2" country="DE" mcc="262" mnc="08" />
+        <item name="HOME_NETWORK">26207,26208</item>
+    </profile>
+
+    <!--Begium-->
+    <profile>
+        <siminfo operator="Proximus" country="BE" mcc="206" mnc="01" />
+        <siminfo operator="Telenet" country="BE" mcc="206" mnc="05" />
+        <siminfo operator="Mobistar" country="BE" mcc="206" mnc="10" />
+        <item name="HOME_NETWORK">20601,20605,20610</item>
+    </profile>
+
+    <!--NL-->
+    <profile>
+        <siminfo operator="Telfort" country="NL" mcc="204" mnc="12" />
+        <item name="HOME_NETWORK">20408</item>
+    </profile>
+
+    <!--AI-->
+    <profile>
+        <siminfo operator="Yesss" country="AT" mcc="232" mnc="12" />
+        <item name="HOME_NETWORK">23201</item>
+    </profile>
+
+    <!--NL ,TMO_EU, ORG ,OPEN-->
+    <profile>
+        <siminfo operator="Tele2" country="NL" mcc="204" mnc="02" /> <!--new-->
+        <item name="HOME_NETWORK">20416,20420</item>
+    </profile>
+
+    <!--Austria ,TMO_EU, ORG ,OPEN-->
+    <profile>
+        <siminfo operator="H3G" country="AT" mcc="232" mnc="10" />
+        <item name="HOME_NETWORK">23201,23203,23205,23210,23211</item>
+    </profile>
+
+    <profile>
+        <siminfo operator="A1" country="AT" mcc="232" mnc="01" /> <!--new-->
+        <siminfo operator="Bob" country="AT" mcc="232" mnc="11" /> <!--new-->
+        <item name="HOME_NETWORK">23201,23210,23211</item>
+    </profile>
+
+    <!--Austria-->
+    <profile>
+        <siminfo operator="Orange" country="AT" mcc="232" mnc="05" />
+        <item name="HOME_NETWORK">23203,23205,23210</item>
+    </profile>
+
+    <!--Sweden ,TMO_EU, ORG ,OPEN-->
+    <profile>
+        <siminfo operator="H3G" country="Sweden" mcc="240" mnc="02" /> <!--new-->
+        <siminfo operator="H3G" country="Sweden" mcc="240" mnc="04" />
+        <item name="HOME_NETWORK">24002,24004</item>
+    </profile>
+
+    <!--Finland-->
+    <profile>
+        <siminfo operator="Saunalahti" country="Finland" mcc="244" mnc="21" />
+        <item name="HOME_NETWORK">24405</item>
+    </profile>
+
+    <!--Brazil-->
+    <profile>
+        <siminfo operator="VIVO" country="Brazil" mcc="724" mnc="06" />
+        <siminfo operator="VIVO" country="Brazil" mcc="724" mnc="10" />
+        <siminfo operator="VIVO" country="Brazil" mcc="724" mnc="11" />
+        <siminfo operator="Oi" country="Brazil" mcc="724" mnc="23" />
+        <item name="HOME_NETWORK">72406,72410,72411,72423</item>
+    </profile>
+    <profile>
+        <siminfo operator="TIM" country="Brazil" mcc="724" mnc="02" />
+        <siminfo operator="TIM" country="Brazil" mcc="724" mnc="03" />
+        <siminfo operator="TIM" country="Brazil" mcc="724" mnc="04" />
+        <item name="HOME_NETWORK">72402,72403,72404</item>
+    </profile>
+
+    <!--China-->
+    <profile>
+        <siminfo operator="CMCC" country="CN" mcc="460" mnc="00" />
+        <siminfo operator="CMCC" country="CN" mcc="460" mnc="02" />
+        <item name="HOME_NETWORK">46000,46002</item>
+    </profile>
+
+    <!--HK-->
+    <profile>
+        <siminfo operator="Hutchison" country="HK" mcc="454" mnc="03" /> <!--add 45400,45402,45410,45413,45416,45419-->
+        <item name="HOME_NETWORK">45400,45402,45404,45406,45410,45412,45413,45415,45416,45417,45418,45419</item>
+    </profile>
+
+    <!-- deleted
+    <profile>
+        <siminfo operator="" country="" mcc="418" mnc="30" />
+        <item name="HOME_NETWORK">41820</item>
+    </profile>
+
+    <profile>
+        <siminfo operator="" country="" mcc="425" mnc="08" />
+        <item name="HOME_NETWORK">42502</item>
+    </profile>
+
+    <profile>
+        <siminfo operator="" country="" mcc="425" mnc="14" />
+        <item name="HOME_NETWORK">42501</item>
+    </profile>
+
+    <profile>
+        <siminfo operator="" country="" mcc="510" mnc="21" />
+        <item name="HOME_NETWORK">51001</item>
+    </profile>
+    -->
+</profiles>

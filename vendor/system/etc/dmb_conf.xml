@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<LG-F240S>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="preview_screen_width_list" value="1152"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="674"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F240S>
+
+	<LG-F240K>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="preview_screen_width_list" value="1152"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="674"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F240K>
+
+	<LG-F240L>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="preview_screen_width_list" value="1152"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="674"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F240L>
+
+	<LG-F320S>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F320S>
+
+	<LG-F320K>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F320K>
+
+	<LG-F320L>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F320L>
+
+	<LG-F350S>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F350S>
+
+	<LG-F350K>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F350K>
+
+	<LG-F350L>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F350L>
+
+	<LG-F410S>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F410S>
+
+	<LG-F430L>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<item name ="split_screen_min_width" value="124"/>
+		<item name ="split_screen_min_height" value="150"/>
+		<end/>
+	</LG-F430L>
+
+	<LG-F440S>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="isDomeBackKey" value="true"/>
+		<item name ="preview_screen_width_list" value="288"/>
+		<item name ="preview_screen_height_list" value="192"/>
+		<item name ="preview_screen_width_port" value="320"/>
+		<item name ="preview_screen_height_port" value="182"/>
+		<item name ="status_bar_height" value="25"/>
+		<item name ="bottom_button_height" value="67"/>
+		<end/>
+	</LG-F440S>
+
+	<LG-F440K>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="isDomeBackKey" value="true"/>
+		<item name ="preview_screen_width_list" value="288"/>
+		<item name ="preview_screen_height_list" value="192"/>
+		<item name ="preview_screen_width_port" value="320"/>
+		<item name ="preview_screen_height_port" value="182"/>
+		<item name ="status_bar_height" value="25"/>
+		<item name ="bottom_button_height" value="67"/>
+		<end/>
+	</LG-F440K>
+
+	<LG-F440L>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="isDomeBackKey" value="true"/>
+		<item name ="preview_screen_width_list" value="288"/>
+		<item name ="preview_screen_height_list" value="192"/>
+		<item name ="preview_screen_width_port" value="320"/>
+		<item name ="preview_screen_height_port" value="182"/>
+		<item name ="status_bar_height" value="25"/>
+		<item name ="bottom_button_height" value="67"/>
+		<end/>
+	</LG-F440L>
+
+	<LG-F470S>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<item name ="split_screen_min_width" value="124"/>
+		<item name ="split_screen_min_height" value="150"/>
+		<end/>
+	</LG-F470S>
+
+	<LG-F470K>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<item name ="split_screen_min_width" value="124"/>
+		<item name ="split_screen_min_height" value="150"/>
+		<end/>
+	</LG-F470K>
+
+	<LG-F470L>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<item name ="split_screen_min_width" value="124"/>
+		<item name ="split_screen_min_height" value="150"/>
+		<end/>
+	</LG-F470L>
+
+	<LG-F470US>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<item name ="split_screen_min_width" value="124"/>
+		<item name ="split_screen_min_height" value="150"/>
+		<end/>
+	</LG-F470US>
+
+	<LG-F470UK>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<item name ="split_screen_min_width" value="124"/>
+		<item name ="split_screen_min_height" value="150"/>
+		<end/>
+	</LG-F470UK>
+
+	<LG-F470UL>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<item name ="split_screen_min_width" value="124"/>
+		<item name ="split_screen_min_height" value="150"/>
+		<end/>
+	</LG-F470UL>
+	
+	<LG-F480S>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="isDomeBackKey" value="true"/>
+		<item name ="preview_screen_width_list" value="288"/>
+		<item name ="preview_screen_height_list" value="192"/>
+		<item name ="preview_screen_width_port" value="320"/>
+		<item name ="preview_screen_height_port" value="182"/>
+		<item name ="status_bar_height" value="25"/>
+		<item name ="bottom_button_height" value="67"/>
+		<end/>
+	</LG-F480S>
+
+	<LG-F480K>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="isDomeBackKey" value="true"/>
+		<item name ="preview_screen_width_list" value="288"/>
+		<item name ="preview_screen_height_list" value="192"/>
+		<item name ="preview_screen_width_port" value="320"/>
+		<item name ="preview_screen_height_port" value="182"/>
+		<item name ="status_bar_height" value="25"/>
+		<item name ="bottom_button_height" value="67"/>
+		<end/>
+	</LG-F480K>
+
+	<LG-F480L>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="isNavigationBar" value="false"/>
+		<item name ="isDomeBackKey" value="true"/>
+		<item name ="preview_screen_width_list" value="288"/>
+		<item name ="preview_screen_height_list" value="192"/>
+		<item name ="preview_screen_width_port" value="320"/>
+		<item name ="preview_screen_height_port" value="182"/>
+		<item name ="status_bar_height" value="25"/>
+		<item name ="bottom_button_height" value="67"/>
+		<end/>
+	</LG-F480L>
+	
+	<LG-F490L>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F490L>
+
+	<LG-F510S>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F510S>	
+
+	<LG-F510K>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F510K>	
+
+	<LG-F510L>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="1076"/>
+		<item name ="preview_screen_height_list" value="668"/>
+		<item name ="preview_screen_width_port" value="1080"/>
+		<item name ="preview_screen_height_port" value="609"/>
+		<item name ="status_bar_height" value="75"/>
+		<item name ="bottom_button_height" value="217"/>
+		<item name ="split_screen_min_width" value="186"/>
+		<item name ="split_screen_min_height" value="220"/>
+		<end/>
+	</LG-F510L>
+	
+	<LG-F520S>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<end/>
+	</LG-F520S>
+
+	<LG-F520K>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<end/>
+	</LG-F520K>
+
+	<LG-F520L>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<end/>
+	</LG-F520L>
+
+	<LG-F540S>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<end/>
+	</LG-F540S>
+
+	<LG-F540K>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<end/>
+	</LG-F540K>
+
+	<LG-F540L>
+		<item name ="onlyEarAntenna" value="true"/>
+		<item name ="preview_screen_width_list" value="712"/>
+		<item name ="preview_screen_height_list" value="445"/>
+		<item name ="preview_screen_width_port" value="720"/>
+		<item name ="preview_screen_height_port" value="407"/>
+		<item name ="status_bar_height" value="50"/>
+		<item name ="bottom_button_height" value="145"/>
+		<end/>
+	</LG-F540L>
+</Settings>
