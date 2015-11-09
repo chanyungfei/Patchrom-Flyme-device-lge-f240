@@ -371,6 +371,10 @@
 
     sput v1, Landroid/widget/TextView;->ID_TEXTLINK:I
 
+    sget v1, Lcom/flyme/internal/R$id;->copyAll:I
+
+    sput v1, Landroid/widget/TextView;->ID_COPY_ALL:I
+
     return-void
 .end method
 
@@ -23201,6 +23205,18 @@
     :cond_0
     packed-switch p1, :pswitch_data_0
 
+    invoke-static/range {p0 .. p1}, Landroid/widget/TextView$FlymeInjector;->mzOnTextContextMenuItem(Landroid/widget/TextView;I)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_flyme_0
+
+    const/4 v7, 0x1
+
+    return v7
+
+    :cond_flyme_0
+
     sget v9, Landroid/widget/TextView;->ID_TEXTLINK:I
 
     if-ne p1, v9, :cond_4
@@ -23584,6 +23600,10 @@
     if-eqz v5, :cond_c
 
     :cond_9
+    iget-object v7, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
+
+    invoke-virtual {v7, p1}, Landroid/widget/Editor;->onTouchUpEventMz(Landroid/view/MotionEvent;)V
+
     invoke-static {}, Landroid/view/inputmethod/InputMethodManager;->peekInstance()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v2

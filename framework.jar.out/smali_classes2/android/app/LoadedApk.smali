@@ -3665,7 +3665,7 @@
 
     move-result-object v5
 
-    invoke-direct {p0, v5, v4, v2}, Landroid/app/LoadedApk;->rewriteRValues(Ljava/lang/ClassLoader;Ljava/lang/String;I)V
+    invoke-static {p0, v5, v4, v2}, Landroid/app/LoadedApk$FlymeInjector;->rewriteRValues(Landroid/app/LoadedApk;Ljava/lang/ClassLoader;Ljava/lang/String;I)V
 
     goto :goto_1
 

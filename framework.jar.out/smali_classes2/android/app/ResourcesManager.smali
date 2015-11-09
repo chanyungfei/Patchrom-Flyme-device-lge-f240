@@ -294,6 +294,10 @@
 
     move-object/from16 v0, p0
 
+    invoke-direct {v0, v8}, Landroid/app/ResourcesManager;->mzFreeCaches(I)V
+
+    move-object/from16 v0, p0
+
     iget-boolean v4, v0, Landroid/app/ResourcesManager;->mThemeIconEnabled:Z
 
     if-eqz v4, :cond_5

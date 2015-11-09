@@ -609,6 +609,8 @@
 
     iput-boolean v2, p0, Landroid/net/wifi/WifiConfiguration;->duplicateNetwork:Z
 
+    invoke-direct/range {p0 .. p0}, Landroid/net/wifi/WifiConfiguration;->initFlymeExtFields()V
+
     return-void
 .end method
 
@@ -1037,6 +1039,8 @@
     iget-boolean v1, p1, Landroid/net/wifi/WifiConfiguration;->duplicateNetwork:Z
 
     iput-boolean v1, p0, Landroid/net/wifi/WifiConfiguration;->duplicateNetwork:Z
+
+    invoke-direct/range {p0 .. p1}, Landroid/net/wifi/WifiConfiguration;->initFlymeExtFields(Landroid/net/wifi/WifiConfiguration;)V
 
     .end local v0    # "i":I
     :cond_5
@@ -3709,6 +3713,13 @@
     invoke-virtual/range {v28 .. v29}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     :cond_1c
+    
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v28
+
+    invoke-direct {v0, v1}, Landroid/net/wifi/WifiConfiguration;->toStringExt(Ljava/lang/StringBuilder;)V
+
     const/16 v29, 0xa
 
     invoke-virtual/range {v28 .. v29}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -4980,6 +4991,8 @@
 
     invoke-static {p1, v4}, Landroid/net/wifi/WifiConfiguration;->writeBitSet(Landroid/os/Parcel;Ljava/util/BitSet;)V
 
+    invoke-direct/range {p0 .. p1}, Landroid/net/wifi/WifiConfiguration;->writeExtra(Landroid/os/Parcel;)V
+    
     iget-object v4, p0, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
 
     const/4 v7, 0x6

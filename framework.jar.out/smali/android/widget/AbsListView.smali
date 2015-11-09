@@ -151,6 +151,82 @@
 
 
 # instance fields
+.field protected mActionItemListener:Landroid/view/ActionMode$OnActionItemDragListener;
+
+.field mCanNfcShare:Z
+
+.field protected mCenterContent:Z
+
+.field mCheckForLittleTap:Landroid/widget/AbsListView$MzCheckForLittleTap;
+
+.field protected mCheckRegionRect:Landroid/graphics/Rect;
+
+.field protected mChoiceModeMZ:I
+
+.field mCurrentDragChild:Landroid/view/View;
+
+.field protected mDefaultCheckWidth:I
+
+.field mDelaySpringBack:Ljava/lang/Runnable;
+
+.field mDelaySpringBackEnabled:Z
+
+.field mDelayUpdate:Ljava/lang/Runnable;
+
+.field protected mDragAndDropId:J
+
+.field protected mDragAndDropPosition:I
+
+.field protected mDragOffsetX:I
+
+.field protected mDragOffsetY:I
+
+.field mDragShawdowView:Landroid/view/View;
+
+.field protected mDragViewBackground:I
+
+.field protected mDragViewBackgroundDelete:I
+
+.field protected mDragViewBackgroundFilter:I
+
+.field protected mDragViewhasTransient:Z
+
+.field protected mEnableForEditTextPreference:Z
+
+.field mEnableLoadAllItems:Z
+
+.field mEnablePressStateOnCheck:Z
+
+.field mHasActionDrop:Z
+
+.field mHoldDistance:I
+
+.field mHoldIndicator:Lcom/meizu/widget/MzListHoldIndicator;
+
+.field mHoldIndicatorOffset:I
+
+.field mInCheckRegion:Z
+
+.field mIsFlingToScroll:Z
+
+.field mIsListAtWindowTop:Z
+
+.field mIsThemeLight:Z
+
+.field protected mItemDragListener:Landroid/widget/AbsListView$OnItemDragListener;
+
+.field protected mListItemHeight:I
+
+.field mListWindowTop:I
+
+.field mMultiChoiceDelayRunnable:Ljava/lang/Runnable;
+
+.field protected mOnTouchOutOfItemListener:Landroid/widget/AbsListView$onTouchOutOfItemListener;
+
+.field mShadowBuilder:Landroid/widget/AbsListView$ListViewDragShadowBuilder;
+
+.field protected mShouldDelaySpringBack:Z
+
 .field private downYforOuterTouchSlop:I
 
 .field private isPossibleToSelectedItem:Z
@@ -2732,6 +2808,16 @@
     .locals 5
 
     .prologue
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->mzOnTouchCancel(Landroid/widget/AbsListView;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
+
     const/4 v4, -0x1
 
     const/4 v3, 0x0
@@ -2988,6 +3074,8 @@
 
     .line 3923
     :goto_0
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->mzOnTouchDown(Landroid/widget/AbsListView;)V
+
     iget v7, p0, Landroid/widget/AbsListView;->mTouchMode:I
 
     if-nez v7, :cond_3
@@ -3575,6 +3663,7 @@
 
     .line 4149
     :cond_3
+    :cond_flyme_0
     :goto_0
     :pswitch_0
     const/16 v19, 0x0
@@ -5915,6 +6004,14 @@
     iput v0, v1, Landroid/widget/AbsListView;->mDirection:I
 
     :cond_15
+    move-object/from16 v0, p0
+
+    move/from16 v1, v21
+
+    invoke-static {v0, v1}, Landroid/widget/AbsListView$FlymeInjector;->mzScrollIfNeeded(Landroid/widget/AbsListView;I)I
+
+    move-result v21
+
     move/from16 v0, v21
 
     neg-int v10, v0
@@ -6072,6 +6169,14 @@
     .end local v31    # "overscrollMode":I
     :cond_1a
     :goto_8
+    move-object/from16 v0, p0
+
+    move/from16 v1, v21
+
+    invoke-static {v0, v1}, Landroid/widget/AbsListView$FlymeInjector;->mzScrollIfNeeded3(Landroid/widget/AbsListView;I)I
+
+    move-result v21
+
     if-eqz v21, :cond_1d
 
     move-object/from16 v0, p0
@@ -6195,6 +6300,8 @@
     move-object/from16 v1, p0
 
     iput v0, v1, Landroid/widget/AbsListView;->mDirection:I
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->mzScrollIfNeeded2(Landroid/widget/AbsListView;)V
 
     goto/16 :goto_5
 
@@ -6726,6 +6833,8 @@
     :cond_1
     :goto_2
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/AbsListView;->scrollIfNeeded(IILandroid/view/MotionEvent;)V
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->mzStartScrollIfNeeded(Landroid/widget/AbsListView;)V
 
     move v5, v6
 
@@ -13392,6 +13501,8 @@
 
     .line 3757
     .local v6, "vtev":Landroid/view/MotionEvent;
+    invoke-static/range {p0 .. p1}, Landroid/widget/AbsListView$FlymeInjector;->mzOnTouchEvent(Landroid/widget/AbsListView;Landroid/view/MotionEvent;)V
+
     iget-boolean v11, p0, Landroid/widget/AbsListView;->mCapptouchFlickNoti:Z
 
     if-eqz v11, :cond_5

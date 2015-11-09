@@ -4358,6 +4358,8 @@
     :cond_2
     iget-object v8, p0, Landroid/widget/PopupWindow;->mAnchor:Ljava/lang/ref/WeakReference;
 
+    const/4 v8, 0x0
+
     if-eqz v8, :cond_4
 
     .line 1521
@@ -4463,6 +4465,10 @@
     const/4 v6, 0x1
 
     :cond_6
+    invoke-direct {p0, v5, v6}, Landroid/widget/PopupWindow;->mzUpdate(Landroid/view/WindowManager$LayoutParams;Z)Z
+
+    move-result v6
+
     iget v8, v5, Landroid/view/WindowManager$LayoutParams;->x:I
 
     if-eq v8, p1, :cond_7

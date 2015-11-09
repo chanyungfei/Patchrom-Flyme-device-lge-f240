@@ -82,6 +82,16 @@
     .param p1, "widget"    # Landroid/view/View;
 
     .prologue
+    invoke-direct/range {p0 .. p1}, Landroid/text/style/URLSpan;->mzOnClick(Landroid/view/View;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
+
     :try_start_0
     invoke-virtual {p0}, Landroid/text/style/URLSpan;->getURL()Ljava/lang/String;
 

@@ -105,6 +105,16 @@
     .param p2, "menu"    # Landroid/view/Menu;
 
     .prologue
+    if-eqz p2, :cond_flyme_0
+
+    invoke-virtual/range {p0 .. p2}, Landroid/widget/Editor$SelectionActionModeCallback;->onCreateActionModeMz(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+
+    move-result v3
+
+    return v3
+
+    :cond_flyme_0
+
     const/4 v8, 0x2
 
     const/4 v7, 0x6
@@ -573,6 +583,16 @@
     invoke-interface {v0, p1}, Landroid/view/ActionMode$Callback;->onDestroyActionMode(Landroid/view/ActionMode;)V
 
     :cond_1
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$SelectionActionModeCallback;->injectOnDestroyActionMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
+
     iget-object v0, p0, Landroid/widget/Editor$SelectionActionModeCallback;->this$0:Landroid/widget/Editor;
 
     iget-boolean v0, v0, Landroid/widget/Editor;->mPreserveDetachedSelection:Z

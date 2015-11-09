@@ -147,6 +147,8 @@
     :goto_0
     iput-boolean v3, p0, Landroid/widget/Editor$PositionListener;->mPositionHasChanged:Z
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$PositionListener;->updatePositionHasChanged()V
+
     .line 2506
     sget-boolean v3, Lcom/lge/config/ConfigBuildFlags;->CAPP_BUBBLE_POPUP:Z
 

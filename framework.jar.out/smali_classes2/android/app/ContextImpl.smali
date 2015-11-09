@@ -865,6 +865,9 @@
 
     .line 870
     :cond_3
+
+    invoke-static {}, Landroid/app/ContextImpl;->registeFlymeManager()V
+
     return-void
 .end method
 

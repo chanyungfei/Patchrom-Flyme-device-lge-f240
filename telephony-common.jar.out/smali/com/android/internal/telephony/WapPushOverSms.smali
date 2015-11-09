@@ -17,6 +17,8 @@
 
 
 # instance fields
+.field private mAccessControlManager:Lmeizu/security/AccessControlManager;
+
 .field protected final mContext:Landroid/content/Context;
 
 .field private volatile mWapPushManager:Lcom/android/internal/telephony/IWapPushManager;

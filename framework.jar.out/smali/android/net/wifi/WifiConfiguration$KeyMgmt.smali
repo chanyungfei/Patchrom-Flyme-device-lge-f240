@@ -29,9 +29,9 @@
 
 .field public static final PMF_PSK_SHA256:I = 0xa
 
-.field public static final WAPI_CERT:I = 0x7
+.field public static final WAPI_CERT:I = 0x6
 
-.field public static final WAPI_PSK:I = 0x6
+.field public static final WAPI_PSK:I = 0x5
 
 .field public static final WPA2_PSK:I = 0x4
 
@@ -98,7 +98,7 @@
 
     aput-object v2, v0, v1
 
-    const/4 v1, 0x7
+    add-int/lit8 v1, v1, 0x1
 
     const-string v2, "WAPI_CERT"
 

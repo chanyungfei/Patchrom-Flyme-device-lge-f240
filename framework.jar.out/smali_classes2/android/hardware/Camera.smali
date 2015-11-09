@@ -214,7 +214,7 @@
 
     iput-boolean v2, p0, Landroid/hardware/Camera;->mProxyDataRunning:Z
 
-    invoke-direct {p0, p1}, Landroid/hardware/Camera;->cameraInitNormal(I)I
+    invoke-direct {p0, p1}, Landroid/hardware/Camera;->hook_cameraInitNormal(I)I
 
     move-result v0
 

@@ -1679,7 +1679,7 @@
 
     .restart local v18    # "title":Ljava/lang/CharSequence;
     :goto_4
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     invoke-virtual {v11, v2}, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
 
@@ -1872,7 +1872,7 @@
 
     .restart local v18    # "title":Ljava/lang/CharSequence;
     :goto_5
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     invoke-virtual {v11, v2}, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
 
@@ -2249,6 +2249,10 @@
     move-result-object v1
 
     invoke-virtual {v10, v1}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    sget v0, Lcom/flyme/internal/R$drawable;->mz_stat_sys_traffic_warn:I
+
+    invoke-virtual {v10, v0}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
     .line 1191
     :goto_2
@@ -9393,6 +9397,10 @@
     .line 2420
     :cond_1
     :goto_1
+    invoke-static {v3, v2}, Lcom/android/server/net/NetworkPolicyManagerService$MzInjector;->flymeChangeUidRules(II)I
+
+    move-result v3
+
     iget-object v6, p0, Lcom/android/server/net/NetworkPolicyManagerService;->removed_uid_list:Ljava/util/List;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

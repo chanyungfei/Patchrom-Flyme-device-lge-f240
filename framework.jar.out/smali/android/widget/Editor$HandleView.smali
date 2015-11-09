@@ -1287,6 +1287,8 @@
 
     iput-boolean v0, v1, Landroid/widget/Editor$HandleView;->mIsDragging:Z
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->hideOptionWrapper()V
+
     .line 4309
     sget-boolean v17, Lcom/lge/config/ConfigBuildFlags;->CAPP_BUBBLE_POPUP:Z
 
@@ -1509,6 +1511,9 @@
 
     .line 4318
     :pswitch_1
+
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->hideOptionWrapper()V
+
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v14
@@ -2257,6 +2262,16 @@
     if-eqz p2, :cond_0
 
     :cond_2
+    invoke-direct/range {p0 .. p1}, Landroid/widget/Editor$HandleView;->injectPositionAtCursorOffset(I)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
+
     if-eqz v2, :cond_5
 
     sget-boolean v5, Lcom/lge/config/ConfigBuildFlags;->CAPP_BUBBLE_POPUP:Z
@@ -2649,6 +2664,8 @@
 
     :goto_0
     iput-object v2, p0, Landroid/widget/Editor$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->postInvalidate()V
 
     iget-object v3, p0, Landroid/widget/Editor$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -3107,6 +3124,8 @@
 
     invoke-virtual {v10, v8, v9, v11, v12}, Landroid/widget/PopupWindow;->update(IIII)V
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->sendShowMessage()V
+
     .line 4215
     :goto_1
     sget-boolean v10, Lcom/lge/config/ConfigBuildFlags;->CAPP_BUBBLE_POPUP:Z
@@ -3329,6 +3348,8 @@
 
     invoke-virtual {v10, v11, v12, v8, v9}, Landroid/widget/PopupWindow;->showAtLocation(Landroid/view/View;III)V
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->sendShowMessage()V
+
     goto/16 :goto_1
 
     .line 4224
@@ -3351,6 +3372,8 @@
 
     invoke-virtual {p0}, Landroid/widget/Editor$HandleView;->dismiss()V
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->sendHideMessage()V
+
     goto/16 :goto_2
 
     :cond_16
@@ -3361,6 +3384,8 @@
     iget-object v10, p0, Landroid/widget/Editor$HandleView;->mContainer:Landroid/widget/PopupWindow;
 
     invoke-virtual {v10}, Landroid/widget/PopupWindow;->dismiss()V
+
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->sendHideMessage()V
 
     goto/16 :goto_2
 .end method

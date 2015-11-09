@@ -770,6 +770,18 @@
 
     .line 852
     :cond_0
+    invoke-direct/range {p0 .. p0}, Lcom/android/internal/telephony/SMSDispatcher;->mzCheckSimState()Z
+
+    move-result v8
+
+    if-nez v8, :cond_flyme_0
+
+    const/4 v9, 0x1
+
+    return v9
+
+    :cond_flyme_0
+
     const/4 v8, 0x0
 
     .line 853

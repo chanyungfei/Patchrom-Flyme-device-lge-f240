@@ -2724,6 +2724,7 @@
     invoke-static {v3, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5
+    :cond_flyme_0
     if-eqz v0, :cond_0
 
     const/4 v3, -0x1
@@ -9217,6 +9218,16 @@
     iget-object v12, v0, Lcom/android/server/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
     if-eqz v12, :cond_4
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/android/server/InputMethodManagerService;->mWindowManagerService:Lcom/android/server/wm/WindowManagerService;
+
+    invoke-virtual {v12}, Lcom/android/server/wm/WindowManagerService;->hasNavigationBar()Z
+
+    move-result v12
+
+    if-nez v12, :cond_flyme_0
 
     .line 1654
     move-object/from16 v0, p0

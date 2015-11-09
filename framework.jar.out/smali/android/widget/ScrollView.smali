@@ -3614,6 +3614,7 @@
     invoke-virtual {p0}, Landroid/widget/ScrollView;->postInvalidateOnAnimation()V
 
     :cond_9
+    :cond_flyme_1
     invoke-virtual {p0}, Landroid/widget/ScrollView;->stopNestedScroll()V
 
     goto/16 :goto_1
@@ -4395,6 +4396,7 @@
     packed-switch v21, :pswitch_data_0
 
     :cond_2
+    :cond_flyme_0
     :goto_0
     :pswitch_0
     move-object/from16 v0, p0
@@ -4748,6 +4750,14 @@
     iget v2, v0, Landroid/widget/ScrollView;->mTouchSlop:I
 
     sub-int/2addr v4, v2
+
+    :goto_flyme_0
+
+    const/4 v2, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v2}, Landroid/widget/ScrollView;->springBackDelay(I)V
 
     .end local v29    # "parent":Landroid/view/ViewParent;
     :cond_b
@@ -5188,6 +5198,16 @@
 
     .line 726
     .local v25, "initialVelocity":I
+    move-object/from16 v0, p0
+
+    move/from16 v1, v25
+
+    invoke-direct {v0, v1}, Landroid/widget/ScrollView;->mzOnTouchUp(I)Z
+
+    move-result v2
+
+    if-nez v2, :cond_flyme_0
+
     sget-boolean v2, Landroid/widget/ScrollView;->mCapptouchFlickNoti:Z
 
     if-eqz v2, :cond_14

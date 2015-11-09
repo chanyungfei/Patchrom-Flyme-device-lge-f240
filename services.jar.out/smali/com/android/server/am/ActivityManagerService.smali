@@ -2479,6 +2479,8 @@
 
     move-result-object v7
 
+    const/4 v7, 0x0
+
     .line 2475
     .local v7, "c":Ljava/lang/Class;
     if-eqz v7, :cond_3
@@ -2647,6 +2649,9 @@
 
     .end local v11    # "itsOnProcessObserver":Landroid/app/IProcessObserver;
     :cond_5
+
+    invoke-static/range {p0 .. p0}, Lcom/android/server/am/InjectorAMS;->setup(Lcom/android/server/am/ActivityManagerService;)V
+
     return-void
 
     :catch_0
@@ -5709,7 +5714,7 @@
     invoke-static {v5, v7}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 16067
-    const/4 v5, 0x0
+    const/4 v5, -0x2
 
     .line 16554
     :goto_0

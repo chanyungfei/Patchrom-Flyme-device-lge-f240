@@ -63,6 +63,26 @@
 
 
 # instance fields
+.field public mCursorOffsetX:I
+
+.field public mEnableDragSelection:Z
+
+.field public mHandler:Landroid/widget/Editor$OptionHandle;
+
+.field public mIsInDragSelectionMode:Z
+
+.field public mLastLayoutHeight:I
+
+.field public mLastScrollTime:J
+
+.field public mOptionWrapper:Landroid/widget/Editor$OptionWrapper;
+
+.field public mSelectionActionModeCallback:Landroid/widget/Editor$SelectionActionModeCallback;
+
+.field public mSelectonActionModeRunnable:Ljava/lang/Runnable;
+
+.field public mStartActionModeResult:Z
+
 .field private cliptrayUtils:Landroid/widget/CliptrayUtils;
 
 .field mBlink:Landroid/widget/Editor$Blink;
@@ -268,6 +288,9 @@
 
     .line 247
     :cond_0
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->initExtFlymeFields(Landroid/widget/Editor;)V
+
     return-void
 .end method
 
@@ -8175,6 +8198,18 @@
     .locals 13
 
     .prologue
+    iget-object v0, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_flyme_0
+
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/Editor;->startSelectionActionModeMz()Z
+
+    move-result v2
+
+    return v2
+
+    :cond_flyme_0
+
     const/4 v12, 0x0
 
     const/4 v10, 0x1
@@ -8440,6 +8475,8 @@
     .locals 4
 
     .prologue
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->removeSelectonActionModeRunnable(Landroid/widget/Editor;)V
+
     const/4 v3, 0x0
 
     iget-object v2, p0, Landroid/widget/Editor;->mSelectionActionMode:Landroid/view/ActionMode;
@@ -8504,6 +8541,8 @@
     .end local v0    # "selEnd":I
     .end local v1    # "selStart":I
     :cond_1
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->hideSelectionModifierCursorController(Landroid/widget/Editor;)V
+
     return-void
 .end method
 

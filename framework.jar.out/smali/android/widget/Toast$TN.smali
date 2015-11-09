@@ -626,6 +626,8 @@
 
     iput-object v4, v5, Landroid/view/WindowManager$LayoutParams;->packageName:Ljava/lang/String;
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Toast$TN;->mzHookToastType()V
+
     iget-object v5, p0, Landroid/widget/Toast$TN;->mView:Landroid/view/View;
 
     invoke-virtual {v5}, Landroid/view/View;->getParent()Landroid/view/ViewParent;

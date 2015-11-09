@@ -2430,9 +2430,9 @@
 
     invoke-virtual {v4, v5}, Landroid/view/Window;->setDefaultLogo(I)V
 
-    new-instance v4, Lcom/android/internal/app/WindowDecorActionBar;
+    new-instance v4, Lcom/android/internal/app/ActionBarImpl;
 
-    invoke-direct {v4, p0}, Lcom/android/internal/app/WindowDecorActionBar;-><init>(Landroid/app/Dialog;)V
+    invoke-direct {v4, p0}, Lcom/android/internal/app/ActionBarImpl;-><init>(Landroid/app/Dialog;)V
 
     iput-object v4, p0, Landroid/app/Dialog;->mActionBar:Landroid/app/ActionBar;
 

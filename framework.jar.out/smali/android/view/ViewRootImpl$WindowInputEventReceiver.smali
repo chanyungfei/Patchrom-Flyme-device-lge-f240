@@ -85,6 +85,10 @@
     .param p1, "event"    # Landroid/view/InputEvent;
 
     .prologue
+    iget-object v0, p0, Landroid/view/ViewRootImpl$WindowInputEventReceiver;->this$0:Landroid/view/ViewRootImpl;
+
+    invoke-virtual {v0, p1}, Landroid/view/ViewRootImpl;->processEventForMoveWinIfNeed(Landroid/view/InputEvent;)V
+
     instance-of v3, p1, Landroid/view/KeyEvent;
 
     if-eqz v3, :cond_1

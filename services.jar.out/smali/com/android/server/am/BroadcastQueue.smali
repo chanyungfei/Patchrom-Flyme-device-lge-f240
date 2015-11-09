@@ -5892,6 +5892,8 @@
     if-eqz v4, :cond_23
 
     :cond_22
+    invoke-static/range {v34 .. v34}, Lcom/android/server/am/InjectorAMS;->setCurrentBroadcastRecord(Lcom/android/server/am/BroadcastRecord;)V
+
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/server/am/BroadcastQueue;->mService:Lcom/android/server/am/ActivityManagerService;
