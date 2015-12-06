@@ -15711,6 +15711,8 @@
     .local v2, "details":Ljava/lang/CharSequence;
     const v3, 0x1080662
 
+    const v3, #android:drawable@stat_notify_wifi_in_range#t
+
     .line 4797
     .local v3, "icon":I
     :goto_0
